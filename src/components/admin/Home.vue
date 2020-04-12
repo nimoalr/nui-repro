@@ -13,7 +13,7 @@
             <v-flex xs12 md text-xs-center py-1>
               <v-toolbar dark color="red darken-2" dense text height="20">
                 <v-toolbar-title class="">
-                  <span class="text-uppercase font-weight-thin">Vous</span>
+                  <span class="text-uppercase font-weight-thin">You</span>
                 </v-toolbar-title>
               </v-toolbar>
               <v-btn v-bind:outlined="!$store.state.adminStore.toggle.NoClip"
@@ -35,7 +35,7 @@
                 Invisible
               </v-btn>
               <v-btn outlined block small color="red darken-2" @click="performHeal('self', 'full')">
-                Soins
+                Heal
               </v-btn>
               <v-btn outlined block small color="red darken-2" @click="performHeal('self', 'kill')">
                 Suicide
@@ -48,16 +48,16 @@
             <v-flex xs12 md text-xs-center py-1>
               <v-toolbar dark color="red darken-2" dense text height="20">
                 <v-toolbar-title class="">
-                  <span class="text-uppercase font-weight-thin">Véhicules</span>
+                  <span class="text-uppercase font-weight-thin">Vehicles</span>
                 </v-toolbar-title>
               </v-toolbar>
               <v-btn v-bind:outlined="!spawnCarDialog" v-bind:dark="spawnCarDialog"
                      block small color="red darken-2" @click="spawnCarDialog = true">
                 Spawn
               </v-btn>
-              <v-btn outlined block small color="red darken-2" @click="fixCar()">Réparation</v-btn>
-              <v-btn outlined block small color="red darken-2" @click="deleteCar()">Unspawn</v-btn>
-              <v-btn outlined block small color="red darken-2">Custom</v-btn>
+              <v-btn outlined block small color="red darken-2" @click="fixCar()">Fix</v-btn>
+              <v-btn outlined block small color="red darken-2" @click="deleteCar()">Delete</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">Custom</v-btn>
             </v-flex>
           </v-layout>
         </v-flex>
@@ -66,14 +66,14 @@
             <v-flex xs12 md text-xs-center py-1>
               <v-toolbar dark color="red darken-2" dense text height="20">
                 <v-toolbar-title class="">
-                  <span class="text-uppercase font-weight-thin">Utilitaires</span>
+                  <span class="text-uppercase font-weight-thin">Utils</span>
                 </v-toolbar-title>
               </v-toolbar>
 
               <v-btn v-bind:outlined="!$store.state.adminStore.toggle.ShowPlayersNames"
                      v-bind:dark="$store.state.adminStore.toggle.ShowPlayersNames"
                      block small color="red darken-2" @click="toggleShowNames()">
-                Afficher noms + id
+                Show name and ID
               </v-btn>
               <v-btn outlined block small color="red darken-2" @click="performTpMarker()">Marker Teleport</v-btn>
               <v-btn v-bind:outlined="!tpToPosDialog" v-bind:dark="tpToPosDialog"
@@ -124,10 +124,10 @@
                   <span class="text-uppercase font-weight-thin">Garage</span>
                 </v-toolbar-title>
               </v-toolbar>
-              <v-btn outlined block small color="red darken-2">Ouvrir Garage</v-btn>
-              <v-btn outlined block small color="red darken-2">Ajouter Véhicule</v-btn>
-              <v-btn outlined block small color="red darken-2">!!!!!!!!!!</v-btn>
-              <v-btn outlined block small color="red darken-2">!!!!!!!!!!</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">Ouvrir Garage</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">Ajouter Véhicule</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">!!!!!!!!!!</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">!!!!!!!!!!</v-btn>
             </v-flex>
           </v-layout>
         </v-flex>
@@ -139,10 +139,10 @@
                   <span class="text-uppercase font-weight-thin">WIP</span>
                 </v-toolbar-title>
               </v-toolbar>
-              <v-btn outlined block small color="red darken-2">!!!!!!!!!!</v-btn>
-              <v-btn outlined block small color="red darken-2">!!!!!!!!!!</v-btn>
-              <v-btn outlined block small color="red darken-2">!!!!!!!!!!</v-btn>
-              <v-btn outlined block small color="red darken-2">!!!!!!!!!!</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">!!!!!!!!!!</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">!!!!!!!!!!</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">!!!!!!!!!!</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">!!!!!!!!!!</v-btn>
             </v-flex>
           </v-layout>
         </v-flex>
@@ -154,10 +154,10 @@
                   <span class="text-uppercase font-weight-thin">WIP</span>
                 </v-toolbar-title>
               </v-toolbar>
-              <v-btn outlined block small color="red darken-2">!!!!!!!!!!</v-btn>
-              <v-btn outlined block small color="red darken-2">!!!!!!!!!!</v-btn>
-              <v-btn outlined block small color="red darken-2">!!!!!!!!!!</v-btn>
-              <v-btn outlined block small color="red darken-2">!!!!!!!!!!</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">!!!!!!!!!!</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">!!!!!!!!!!</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">!!!!!!!!!!</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">!!!!!!!!!!</v-btn>
             </v-flex>
           </v-layout>
         </v-flex>
@@ -169,10 +169,10 @@
                   <span class="text-uppercase font-weight-thin">WIP</span>
                 </v-toolbar-title>
               </v-toolbar>
-              <v-btn outlined block small color="red darken-2">!!!!!!!!!!</v-btn>
-              <v-btn outlined block small color="red darken-2">!!!!!!!!!!</v-btn>
-              <v-btn outlined block small color="red darken-2">!!!!!!!!!!</v-btn>
-              <v-btn outlined block small color="red darken-2">!!!!!!!!!!</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">!!!!!!!!!!</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">!!!!!!!!!!</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">!!!!!!!!!!</v-btn>
+              <v-btn outlined block small disabled color="red darken-2">!!!!!!!!!!</v-btn>
             </v-flex>
           </v-layout>
         </v-flex>

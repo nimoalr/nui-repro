@@ -38,9 +38,9 @@
 
         data: () => ({
             links: [
-                { id: 1, text: 'Acceuil', icon: 'home', route: '/admin/home' },
+                { id: 1, text: 'Home', icon: 'home', route: '/admin/home' },
                 // { id: 2, text: 'Joueurs', icon: 'person', route: '/admin/players' },
-                { id: 3, text: 'Joueurs adv', icon: 'business_center', route: '/admin/playerDetails' },
+                { id: 3, text: 'Players adv', icon: 'business_center', route: '/admin/playerDetails' },
             ]
         }),
         methods: {
